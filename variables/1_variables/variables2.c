@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-float a,b,c,d, e;
-int a1, b1;
+float a,b,c,d, e; //declarando variables 
+int a1, b1; //declarando variables 
 int main()
 {
 	system("clear");
