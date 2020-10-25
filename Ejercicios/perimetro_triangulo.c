@@ -10,7 +10,7 @@ int main ()
 	printf("Introduzca el valor del tercer lado del triangulo:");
 	scanf("%f", &c);
 	p = a + b + c;
-	printf("El perimetro del triangulo es: %0.2f\n", p);
+	printf("El perimetro del triangulo es: %0.4f", p);
 	
 	
 	
