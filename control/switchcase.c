@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <locale.h>
+//*#include <locale.h>
 int main()
 {
-	setlocale (LC_ALL, "En Español");
+	//*setlocale (LC_ALL, "En Español");
 	int opcion;
 	float a, b, c;
 	
@@ -15,7 +15,8 @@ int main()
 	scanf("%f",&b);
 	b = b;
 	
-	printf("Elige una opcion:\n");
+	do{
+		printf("Elige una opcion:\n");
 	printf("\t 1.- Suma:\n");
 	printf("\t 2.- Resta:\n");
 	printf("\t 3.- Multiplicacion:\n");
@@ -72,7 +73,11 @@ int main()
 		break;
 	default:
 		printf("No está puesta correctamente la unidad\n");
-		exit(0);
 	}
+		printf("\nFin de switch\n");
+			
+	}while(opcion !=6);
+	printf("\nFin de Do-while\n");
+	return 0; 
 
 } 
